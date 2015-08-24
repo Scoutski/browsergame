@@ -23,7 +23,7 @@ $(document).ready(function() {
   };
 
   var growSignUpBox = function() {
-    TweenMax.to(".signUpBox", .6, { css: { scale: "1", webkitBoxShadow: "-1px 8px 3px -5px #003D19", mozBoxShadow: "-1px 8px 3px -5px #003D19", boxShadow: "-1px 8px 3px -5px #003D19;"}, ease: Expo.easeOut });
+    TweenMax.to(".signUpBox", .6, { css: { scale: "1", webkitBoxShadow: "8px 8px 3px -5px #003D19", mozBoxShadow: "8px 8px 3px -5px #003D19", boxShadow: "8px 8px 3px -5px #003D19;"}, ease: Expo.easeOut });
   };
   // ------------------------------------------------------------------------------
 
@@ -43,7 +43,7 @@ $(document).ready(function() {
   };
 
   var growLoginBox = function() {
-    TweenMax.to(".loginBox", .6, { css: { scale: "1", webkitBoxShadow: "-1px 8px 3px -5px #003D19", mozBoxShadow: "-1px 8px 3px -5px #003D19", boxShadow: "-1px 8px 3px -5px #003D19;"}, ease: Expo.easeOut });
+    TweenMax.to(".loginBox", .6, { css: { scale: "1", webkitBoxShadow: "8px 8px 3px -5px #003D19", mozBoxShadow: "8px 8px 3px -5px #003D19", boxShadow: "8px 8px 3px -5px #003D19;"}, ease: Expo.easeOut });
   };  
 
   // ------------------------------------------------------------------------------
