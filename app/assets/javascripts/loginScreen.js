@@ -10,7 +10,7 @@ $(document).ready(function() {
   // THE FOLLOWING FOUR FUNCTIONS ARE FOR WHEN THE USER SELECTS THE SIGN UP BUTTON.
   // ------------------------------------------------------------------------------
   var shrinkLoginBox = function() {
-    TweenMax.to('.loginBox', .6 , { scale:.7, ease: Expo.easeOut, onComplete:moveOutLoginBox});
+    TweenMax.to('.loginBox', .6 , { css: { scale: ".7", webkitBoxShadow: "0px 0px 0px 0px #003D19", mozBoxShadow: "0px 0px 0px 0px #003D19", boxShadow: "0px 0px 0px 0px #003D19;" }, ease: Expo.easeOut, onComplete:moveOutLoginBox});
   };
 
   var moveOutLoginBox = function() {
@@ -23,14 +23,14 @@ $(document).ready(function() {
   };
 
   var growSignUpBox = function() {
-    TweenMax.to(".signUpBox", .6, { scale:1, ease: Expo.easeOut });
+    TweenMax.to(".signUpBox", .6, { css: { scale: "1", webkitBoxShadow: "-1px 8px 3px -5px #003D19", mozBoxShadow: "-1px 8px 3px -5px #003D19", boxShadow: "-1px 8px 3px -5px #003D19;"}, ease: Expo.easeOut });
   };
   // ------------------------------------------------------------------------------
 
   // THE FOLLOWING FOUR FUNCTIONS ARE FOR WHEN THE USER CLOSES THE SIGN UP WINDOW.
   // ------------------------------------------------------------------------------
   var shrinkSignUpBox = function() {
-    TweenMax.to('.signUpBox', .6 , { scale:.7, ease: Expo.easeOut, onComplete:moveOutSignUpBox});
+    TweenMax.to('.signUpBox', .6 , { css: { scale: ".7", webkitBoxShadow: "0px 0px 0px 0px #003D19", mozBoxShadow: "0px 0px 0px 0px #003D19", boxShadow: "0px 0px 0px 0px #003D19;" }, ease: Expo.easeOut, onComplete:moveOutSignUpBox});
   };
 
   var moveOutSignUpBox = function() {
@@ -43,7 +43,7 @@ $(document).ready(function() {
   };
 
   var growLoginBox = function() {
-    TweenMax.to(".loginBox", .6, { scale:1, ease: Expo.easeOut });
+    TweenMax.to(".loginBox", .6, { css: { scale: "1", webkitBoxShadow: "-1px 8px 3px -5px #003D19", mozBoxShadow: "-1px 8px 3px -5px #003D19", boxShadow: "-1px 8px 3px -5px #003D19;"}, ease: Expo.easeOut });
   };  
 
   // ------------------------------------------------------------------------------
