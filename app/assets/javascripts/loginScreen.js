@@ -1,5 +1,6 @@
 $(document).ready(function() {
   if ($('.loginContainer').length < 0) {
+    // Does not run any extra code if not on the login page.
     return;
   }
   

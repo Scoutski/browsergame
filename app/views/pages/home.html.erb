@@ -2,8 +2,20 @@
   <div class="loginBox">
     
     <p class="titleText">Login</p>
+    
+    <%= form_tag '/login' do %>
+  <p>
+    <%= text_field_tag 'username', '' , { :class => 'loginInput', :placeholder => "Username..." }%>
+  </p>
+  <p>
+    <%= password_field_tag 'password', '', { :class => 'loginInput', :placeholder => "Password..." } %>
+  </p>
+  <p>
+    <%= submit_tag 'Login', :id => 'logInButton' %>
+  </p>
+    <% end %>
 
-    <input class="loginInput" name="username" type="text" placeholder="Username...">
+<!--     <input class="loginInput" name="username" type="text" placeholder="Username...">
 
     </br>
 
@@ -11,7 +23,7 @@
 
     </br>
 
-    <button id="logInButton">Login</button>
+    <button id="logInButton">Login</button> -->
     <button id="signUpButton">Sign Up</button>
 
   </div>
