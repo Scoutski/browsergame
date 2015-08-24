@@ -80,6 +80,7 @@ body {
   background-color: #4C996B;
   border: 1px solid #003D19;
   color: black;
+  border-radius: 5px;
 }
 
 ::-webkit-input-placeholder {
@@ -102,6 +103,7 @@ body {
   border: 0;
   background-color: #003D19;
   padding: 10px;
+  height: 45px;
   width: 243px;
   display: table;
   margin: 0 auto;
@@ -110,6 +112,7 @@ body {
   font-size: 1rem;
   color: white;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .loginBox button:hover {
@@ -143,6 +146,7 @@ body {
   background-color: #4C996B;
   border: 1px solid #003D19;
   color: black;
+  border-radius: 5px;
 }
 
 .signUpBox button {
@@ -157,6 +161,7 @@ body {
   font-size: 1rem;
   color: white;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .signUpBox button:hover {
