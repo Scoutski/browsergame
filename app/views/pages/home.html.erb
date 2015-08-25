@@ -3,16 +3,16 @@
     
     <p class="titleText">Login</p>
     
-    <%= form_tag '/login' do %>
-  <p>
-    <%= text_field_tag 'username', '' , { :class => 'loginInput', :placeholder => "Username..." }%>
-  </p>
-  <p>
-    <%= password_field_tag 'password', '', { :class => 'loginInput', :placeholder => "Password..." } %>
-  </p>
-  <p>
-    <%= submit_tag 'Login', :id => 'logInButton' %>
-  </p>
+    <%= form_for @user, url: { action: "create", controller: "session" } do |f| %>
+      <p>
+        <%= f.text_field :username, :class => 'loginInput', :placeholder => "Username..." %>
+      </p>
+      <p>
+        <%= f.password_field :password, :class => 'loginInput', :placeholder => "Password..."  %>
+      </p>
+      <p>
+        <%= f.submit 'Login', :id => 'logInButton' %>
+      </p>
     <% end %>
 
     <button id="signUpButton">Sign Up</button>
