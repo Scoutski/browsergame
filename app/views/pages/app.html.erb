@@ -1,3 +1,13 @@
-<h1>You have successfully logged in.</h1>
-</br>
-<%= link_to("Log Out #{@current_user.username}", login_path, :method => :delete, :confirm => 'Are you sure?') %>
+<div class="appContainer">
+  <%= link_to("Log Out #{@current_user.username}", login_path, :method => :delete, :confirm => 'Are you sure?') %>
+  
+  <div class="charSelectContainer">
+    <h1 class="titleText">Character Select</h1>
+
+  </div>
+
+  <div class="charInfoPanel">
+    <h1 class="titleText">Select a Character to view information.</h1>
+  </div>
+
+</div>

@@ -4,7 +4,7 @@ class PagesController < ApplicationController
   end
 
   def app
-    # If there is no user logged in, will automatically redirect back to the login screen.
+    # If there is no user logged in, will automatically redirect the user back to the login screen.
     if @current_user.nil?
       redirect_to root_path
     end

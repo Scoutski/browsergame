@@ -1,0 +1,39 @@
+// ===================================================
+// .titleText is located in the loginScreen.scss file.
+// ===================================================
+
+.appContainer {
+  background-color: #0f5c2e;
+  width: 100vw;
+  height: 100vh;
+}
+
+.charSelectContainer {
+  background-color: #7AB793;
+  position: absolute;
+  display: inline-block;
+  height: 90vh;
+  width: 20vw;
+  overflow: scroll;
+  left: 50px;
+  top: 5vh;
+  -webkit-box-shadow: 8px 8px 3px -5px #003D19;
+  -moz-box-shadow: 8px 8px 3px -5px #003D19;
+  box-shadow: 8px 8px 3px -5px #003D19;
+  text-align: center;
+}
+
+.charInfoPanel {
+  background-color: #7AB793;
+  position: absolute;
+  display: inline-block;
+  height: 90vh;
+  width: 70vw;
+  top: 5vh;
+  right: 50px;
+  overflow: hidden;
+  -webkit-box-shadow: 8px 8px 3px -5px #003D19;
+  -moz-box-shadow: 8px 8px 3px -5px #003D19;
+  box-shadow: 8px 8px 3px -5px #003D19;
+  text-align: center;
+}
