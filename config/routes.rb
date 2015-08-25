@@ -1,10 +1,15 @@
 Rails.application.routes.draw do
-  # get '/login' => 'pages#home'
 
+
+  #Login routes
+  root :to => 'pages#home'
   post '/login' => 'session#create'
   delete '/login' => 'session#destroy'
 
-  root :to => 'pages#home'
-  # root directory is also the login page.
+  #Main app routes
+  get '/app' => 'pages#app', :as => :app
+
+  #User routes
+  post '/users' => 'users#create'
 
 end

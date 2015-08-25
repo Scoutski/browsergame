@@ -15,15 +15,6 @@
   </p>
     <% end %>
 
-<!--     <input class="loginInput" name="username" type="text" placeholder="Username...">
-
-    </br>
-
-    <input class="loginInput" name="password" type="text" placeholder="Password...">
-
-    </br>
-
-    <button id="logInButton">Login</button> -->
     <button id="signUpButton">Sign Up</button>
 
   </div>
@@ -31,25 +22,23 @@
   <div class="signUpBox">
     <p class="titleText">Sign Up</p>
 
-    <input class="loginInput" name="newUsername" type="text" placeholder="Username...">
+    <%= form_for @user do |f| %>
+      <p>
+        <%= f.text_field :username, :class => 'signUpInput', :placeholder => "Username..." %>
+      </p>
+      <p>
+        <%= f.password_field :password, :class => 'signUpInput', :placeholder => "Password..." %>
+      </p>
+      <p>
+        <%= f.password_field :password_confirmation, :class => 'signUpInput', :placeholder => "Confirm Password..." %>
+      </p>
+      <p>
+        <%= f.text_field :email, :class => 'signUpInput', :placeholder => "E-mail..." %>
+      </p>
+        <%= f.submit 'Submit', :id => 'submitButton' %>
+    <% end %>
 
-    </br>
-
-    <input class="loginInput" name="newPassword" type="text" placeholder="Password...">
-
-    </br>
-
-    <input class="loginInput" name="emailAddress" type="text" placeholder="E-mail...">
-
-    </br>
-
-    <input class="loginInput" name="passwordConf" type="text" placeholder="Confirm Password...">
-
-    </br>
-
-    <button id="completeSignUpButton">Sign Up</button>
     <button id="closeWindowButton">Close Window</button>
-
   </div>
 
 </div>

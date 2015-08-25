@@ -135,7 +135,7 @@ body {
   z-index: 2;
 }
 
-.signUpBox input {
+.signUpInput, .signUpBox input {
     display: block;
   margin: 0 auto;
   margin-top: 7px;
@@ -149,7 +149,7 @@ body {
   // border-radius: 5px;
 }
 
-.signUpBox button {
+#submitButton, .signUpBox button {
   border: 0;
   background-color: #003D19;
   padding: 10px;
@@ -164,7 +164,7 @@ body {
   // border-radius: 5px;
 }
 
-.signUpBox button:hover {
+#submitButton:hover, .signUpBox button:hover {
   background-color: #0F5C2E;
 }
 
